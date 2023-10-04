@@ -1,0 +1,48 @@
+
+ .horizontal-scrolling-items {
+   display: flex;
+   font-size: 40px; 
+   margin-top: 50px;
+ } 
+
+
+.horizontal-scrolling-items {
+  height: 200px;
+  gap: 50px;
+}
+
+.horizontal-scrolling-items__item {
+  height: 100%;
+  width: 200px;
+  background-size: cover;
+  
+}
+.horizontal-scrolling-items {
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+ @keyframes infiniteScroll {
+  from {transform: translateX(0) }
+  to {transform: translateX(calc(0px - 50% - 25px));}
+}
+.item1 {
+  background-image: url("assets/Group 3.png");
+}
+
+.item2 {
+  background-image: url("assets/Group 2.png");
+}
+
+.item3 {
+  background-image: url("assets/Vector.png");
+}
+
+.item4 {
+  background-image: url("assets/Group 9235.png");
+}
+
+.item5 {
+  background-image: url("assets/Group 3.png");
+}
